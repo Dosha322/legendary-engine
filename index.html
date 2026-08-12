@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="eX4OdqpYT6v0Gk8NOjrjOfasmNh1g_j_D_OG0IaExDA" />
-  <title>Mr.DmDm - منصة إدارة الطلاب</title>
+  <meta name="google-site-verification" content="eX40dqpYT6v0Gk8NOjrjOfasmNh1g_j_D_OGOIaExDA" />
+  <title>منصه مستر محمد | ملك التوقعات | الدمراوي - مستر دمدم | طلاب الدمراوي | Dmdm | Mrdmdm</title>
+  <meta name="keywords" content="منصه مستر محمد, ملك التوقعات, الدمراوي, مستر دمدم, طلاب الدمراوي, Dmdm, Mrdmdm" />
+  <meta name="description" content="منصه مستر محمد (ملك التوقعات - الدمراوي / مستر دمدم) منصة إدارة الطلاب - Mrdmdm Dmdm" />
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 :root {
@@ -102,6 +105,2388 @@ a {
     font-size: 13px;
     border-radius: 10px;
 }
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 4px 16px -6px rgba(59, 89, 152, .5);
+}
+.btn-secondary {
+    background: #fff;
+    color: var(--ink);
+    border: 2px solid var(--border);
+}
+.btn-ghost {
+    background: transparent;
+    color: var(--ink-soft);
+}
+.btn-danger {
+    background: var(--danger);
+    color: #fff;
+}
+.btn-subtle {
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+}
+.btn-full {
+    width: 100%;
+}
+.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+}
+.p3 {
+    padding: 14px;
+}
+.p4 {
+    padding: 16px;
+}
+.p5 {
+    padding: 20px;
+}
+.field {
+    display: block;
+    margin-bottom: 16px;
+}
+.field-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: var(--ink);
+}
+.field-hint {
+    display: block;
+    font-size: 11px;
+    margin-top: 4px;
+    color: var(--ink-soft);
+}
+.field-error {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    margin-top: 4px;
+    color: var(--danger);
+}
+.input,
+select.input,
+textarea.input {
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1.5px solid var(--border);
+    background: #FCFDFE;
+    color: var(--ink);
+    outline: none;
+    transition: border-color .2s;
+}
+.input:focus {
+    border-color: var(--primary);
+}
+.input-wrap {
+    position: relative;
+}
+.input-icon-btn {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-soft);
+}
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 800;
+}
+.progress-row {
+    margin-bottom: 14px;
+}
+.progress-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--ink-soft);
+    margin-bottom: 5px;
+}
+.progress-track {
+    height: 10px;
+    border-radius: 99px;
+    background: #EDF1F5;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width .4s;
+}
+.tabs {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    white-space: nowrap;
+    background: #EEF1F5;
+    color: var(--ink-soft);
+    flex-shrink: 0;
+    transition: .2s;
+}
+.tab.active {
+    background: var(--primary);
+    color: #fff;
+}
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 10px;
+    text-align: center;
+}
+.empty-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 99px;
+    background: #EEF1F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.empty p {
+    font-size: 14px;
+    color: var(--ink-soft);
+}
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    padding: 12px 20px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .18);
+    max-width: 90vw;
+    text-align: center;
+    animation: toastIn .3s ease;
+}
+@keyframes toastIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+.id-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, var(--primary-dark), #4A6FA5);
+}
+.id-card .glow {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 160px;
+    height: 160px;
+    border-radius: 99px;
+    background: var(--gold);
+    opacity: .18;
+}
+.id-card .brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    opacity: .75;
+}
+.id-card .avatar-area {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    background: rgba(255, 255, 255, .18);
+    margin: 14px 0 12px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, .35);
+}
+.id-card .avatar-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.id-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+}
+.id-card .sub {
+    font-size: 12px;
+    opacity: .8;
+    margin-top: 2px;
+}
+.id-card .code {
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: .05em;
+    margin-top: 8px;
+    color: #F5D98B;
+}
+.id-card .stats {
+    position: relative;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+.id-card .stats b {
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+}
+.id-card .stats span {
+    font-size: 10px;
+    opacity: .7;
+}
+.id-card .eval-chip {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .88);
+    display: inline-block;
+    color: #1A1D28;
+}
+.id-card .phones {
+    position: relative;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 11px;
+    opacity: .85;
+}
+
+/* ============ DIAMOND ID CARD THEME (student card) ============ */
+.id-card-diamond {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    padding: 2px;
+    background: linear-gradient(135deg, #E8C170, #C88A2E 35%, #8a5d1c 60%, #E8C170);
+    box-shadow: 0 10px 30px -12px rgba(20,30,60,.5);
+}
+.id-card-diamond .dc-inner {
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    color: #EAF1FF;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(255,255,255,.10), transparent 40%),
+        radial-gradient(circle at 90% 90%, rgba(255,255,255,.06), transparent 45%),
+        linear-gradient(150deg, #0F2350, #16307A 45%, #0B1B3E 100%);
+    overflow: hidden;
+}
+.id-card-diamond .dc-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(45deg, rgba(232,193,112,.05) 25%, transparent 25%, transparent 75%, rgba(232,193,112,.05) 75%),
+        linear-gradient(45deg, rgba(232,193,112,.05) 25%, transparent 25%, transparent 75%, rgba(232,193,112,.05) 75%);
+    background-size: 26px 26px;
+    background-position: 0 0, 13px 13px;
+    opacity: .5;
+    pointer-events: none;
+}
+.dc-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #E8C170;
+    letter-spacing: .04em;
+}
+.dc-top {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 6px;
+}
+.dc-photo-wrap {
+    width: 86px;
+    height: 86px;
+    border-radius: 999px;
+    margin: 0 auto 10px;
+    padding: 4px;
+    background: linear-gradient(135deg, #F5DFA0, #C88A2E 40%, #8a5d1c 70%, #F5DFA0);
+    box-shadow: 0 0 0 1px rgba(232,193,112,.4);
+}
+.dc-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    overflow: hidden;
+    background: rgba(255,255,255,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: #E8C170;
+    border: 2px solid #0F2350;
+}
+.dc-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dc-center {
+    position: relative;
+    text-align: center;
+}
+.dc-name {
+    font-size: 19px;
+    font-weight: 800;
+    color: #fff;
+}
+.dc-code {
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: .06em;
+    color: #E8C170;
+    margin-top: 4px;
+}
+.dc-sub {
+    font-size: 12px;
+    color: rgba(234,241,255,.7);
+    margin-top: 2px;
+}
+.dc-status {
+    position: relative;
+    display: inline-flex;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #F5DFA0, #C88A2E);
+    color: #1A1200;
+}
+.dc-chiprow {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-top: 18px;
+}
+.dc-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 4px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(232,193,112,.25);
+    font-size: 10px;
+    font-weight: 800;
+    color: #EAF1FF;
+    transition: .15s;
+}
+.dc-chip.active {
+    background: linear-gradient(135deg, rgba(245,223,160,.22), rgba(200,138,46,.22));
+    border-color: #E8C170;
+    color: #F5DFA0;
+}
+.dc-gauges {
+    position: relative;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(232,193,112,.2);
+}
+.dc-gauge-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #E8C170;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: .03em;
+}
+.dc-gauge-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.dc-gauge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.dc-gauge-track {
+    width: 22px;
+    height: 70px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(232,193,112,.3);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.dc-gauge-fill {
+    width: 100%;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #F5DFA0, #C88A2E);
+    transition: height .5s;
+}
+.dc-gauge-label {
+    font-size: 9px;
+    font-weight: 700;
+    color: rgba(234,241,255,.75);
+    text-align: center;
+    line-height: 1.3;
+}
+.dc-gauge-pct {
+    font-size: 10px;
+    font-weight: 800;
+    color: #F5DFA0;
+}
+.dc-phones {
+    position: relative;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(232,193,112,.15);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    font-size: 11px;
+    color: rgba(234,241,255,.75);
+}
+
+/* ============ ADMIN DARK GOLD THEME ============ */
+.theme-dark-gold {
+    background: radial-gradient(circle at 20% 0%, #241a10, #100c08 55%);
+    min-height: 100vh;
+    color: #F3E7CE;
+}
+.theme-dark-gold .app-header {
+    background: rgba(16, 12, 8, .92);
+    border-bottom: 1px solid #3a2f1e;
+}
+.theme-dark-gold .brand-logo {
+    background: linear-gradient(135deg, #E8C170, #C88A2E);
+}
+.theme-dark-gold .icon-btn {
+    background: #241d14;
+    color: #d9c9a3;
+}
+.theme-dark-gold .tab {
+    background: #1c1610;
+    color: #b9a377;
+}
+.theme-dark-gold .tab.active {
+    background: linear-gradient(135deg, #F5DFA0, #C88A2E);
+    color: #1A1200;
+}
+.theme-dark-gold .card {
+    background: #1a140d;
+    border: 1px solid #3a2f1e;
+    box-shadow: none;
+}
+.theme-dark-gold h4, .theme-dark-gold p, .theme-dark-gold span {
+    color: #F3E7CE;
+}
+.theme-dark-gold .stat-label, .theme-dark-gold .field-hint {
+    color: #a99770 !important;
+}
+.theme-dark-gold .stat-value {
+    color: #F5DFA0 !important;
+}
+.theme-dark-gold .list-item-btn .card {
+    background: #211a11;
+}
+.theme-dark-gold .field-label {
+    color: #E8C170;
+}
+.theme-dark-gold .empty p {
+    color: #a99770;
+}
+.gold-welcome-banner {
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 14px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #F5DFA0, #C88A2E);
+    color: #1A1200;
+    box-shadow: 0 8px 20px -8px rgba(200,138,46,.6);
+}
+
+/* ============ MINT & LAVENDER LANDING ============ */
+.landing-mint {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #CFF3E3 0%, #DCE3F7 55%, #E6DCF7 100%);
+}
+.landing-mint .brand-logo-lg {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #34D399, #8B5CF6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.landing-mint .brand-logo-lg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.landing-mint h2 {
+    color: #14202B;
+}
+.landing-mint .btn-mint-primary {
+    background: linear-gradient(90deg, #34D399, #8B5CF6);
+    color: #fff;
+    box-shadow: 0 10px 24px -10px rgba(139,92,246,.55);
+}
+.landing-mint .btn-mint-secondary {
+    background: rgba(255,255,255,.85);
+    color: #14202B;
+    border: none;
+    box-shadow: 0 2px 10px rgba(20,32,43,.06);
+}
+.landing-mint .btn-mint-ghost {
+    background: transparent;
+    color: #4B5A6B;
+}
+.landing-mint .feature-chip {
+    background: rgba(255,255,255,.7);
+    border: none;
+    box-shadow: 0 2px 10px rgba(20,32,43,.05);
+}
+
+.app-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(245, 247, 250, .9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+}
+.app-header-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #EEF1F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    transition: .2s;
+}
+.icon-btn:hover {
+    background: #E0E4EB;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th {
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+    text-align: right;
+    padding: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+td {
+    padding: 12px;
+    border-top: 1px solid var(--border);
+    white-space: nowrap;
+}
+.table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+}
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+.stat-value {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+}
+.stat-label {
+    font-size: 11px;
+    margin-top: 4px;
+    color: var(--ink-soft);
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.list-item-btn {
+    width: 100%;
+    text-align: right;
+    display: block;
+    transition: .15s;
+}
+.list-item-btn:active {
+    opacity: .8;
+}
+.divide>*+* {
+    border-top: 1px solid var(--border);
+}
+.status-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+.status-btn:active {
+    transform: scale(.9);
+}
+.photo-upload {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.photo-preview {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: var(--primary-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+    overflow: hidden;
+    border: 2px dashed var(--border);
+    flex-shrink: 0;
+}
+.photo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-preview.has-photo {
+    border-style: solid;
+    border-color: var(--primary);
+}
+::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.avatar-sm {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.avatar-sm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sync-dot {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 99px;
+}
+</style>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        /* ============================== CONSTANTS ============================== */
+        const DB_KEY = "nibras-sms-db-v2";
+        const YEAR = new Date().getFullYear();
+        const GRADE_TYPES = ["اختبار", "واجب", "مشروع", "مشاركة"];
+        const ATT = { PRESENT: "حاضر", ABSENT: "غائب", LATE: "متأخر" };
+        const C = {
+            primary: "#3B5998",
+            primaryDark: "#2D4373",
+            primarySoft: "#EEF1F8",
+            gold: "#C88A2E",
+            goldSoft: "#FDF6ED",
+            success: "#0D9488",
+            successSoft: "#E6FAF8",
+            danger: "#DC2626",
+            dangerSoft: "#FEF2F2",
+            warning: "#D97706",
+            warningSoft: "#FFF7ED",
+            info: "#2563EB",
+            infoSoft: "#EFF6FF",
+            ink: "#1A1D28",
+            inkSoft: "#6B7280",
+            border: "#E5E7EB",
+            accent: "#8B5CF6",
+            accentSoft: "#F5F3FF"
+        };
+
+        /* ============================== HELPERS ============================== */
+        function uid(p) { return `${p}_${Date.now().toString(36)}${Math.random().toString(36).slice(2,7)}`; }
+
+        function esc(s) { return (s === undefined || s === null) ? "" : String(s).replace(/&/g, "&amp;").replace(/</g,
+                "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+
+        function genStudentCode(existing) {
+            let c;
+            do { const r = Math.floor(100000 + Math.random() * 900000);
+                c = `STD-${YEAR}-${r}`; } while (existing.has(c));
+            return c;
+        }
+
+        function genStaffCode(existing, role) {
+            let c;
+            const p = role === "admin" ? "ADMIN" : "TEACHER";
+            do { const r = Math.floor(10000 + Math.random() * 90000);
+                c = `${p}-${r}`; } while (existing.has(c));
+            return c;
+        }
+
+        function genPassword() {
+            const ch = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+            let p = "";
+            for (let i = 0; i < 6; i++) p += ch[Math.floor(Math.random() * ch.length)];
+            return p;
+        }
+
+        function todayISO() { return new Date().toISOString().slice(0, 10); }
+
+        function fmtDate(d) {
+            try { return new Date(d).toLocaleDateString("ar-EG", { year: "numeric", month: "2-digit", day: "2-digit" }); } catch
+            (e) { return d; }
+        }
+
+        function fmtDateTime(d) {
+            try { return new Date(d).toLocaleString("ar-EG", { year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit",
+                    minute: "2-digit" }); } catch (e) { return d; }
+        }
+
+        function evalOf(avg) {
+            if (avg === null || avg === undefined || isNaN(avg)) return { label: "لا يوجد تقييم بعد", color: C.inkSoft,
+                bg: "#EEF1F5" };
+            if (avg >= 90) return { label: "ممتاز", color: C.success, bg: C.successSoft };
+            if (avg >= 80) return { label: "جيد جدًا", color: C.info, bg: C.infoSoft };
+            if (avg >= 65) return { label: "جيد", color: C.primary, bg: C.primarySoft };
+            if (avg >= 50) return { label: "مقبول", color: C.warning, bg: C.warningSoft };
+            return { label: "ضعيف", color: C.danger, bg: C.dangerSoft };
+        }
+
+        function defaultDB() {
+            const adminId = uid("TCH");
+            return {
+                students: {},
+                teachers: {
+                    [adminId]: { id: adminId, code: "Demo2026", password: "Mrdmdm", name: "مدير النظام", role: "admin",
+                        photo: "",
+                        createdAt: new Date().toISOString() }
+                },
+                grades: {},
+                attendance: {},
+                notifications: {},
+                classes: [
+                    { grade: "الصف الأول", section: "أ" }, { grade: "الصف الأول", section: "ب" },
+                    { grade: "الصف الثاني", section: "أ" }, { grade: "الصف الثاني", section: "ب" },
+                    { grade: "الصف الثالث", section: "أ" }, { grade: "الصف الثالث", section: "ب" },
+                ],
+                logs: [],
+                appLogo: ""
+            };
+        }
+
+        function calcStats(db, studentId) {
+            const grades = Object.values(db.grades).filter(g => g.studentId === studentId).sort((a, b) => a.date < b.date ? 1 : -1);
+            const attendance = Object.values(db.attendance).filter(a => a.studentId === studentId).sort((a, b) => a.date < b.date ? 1 : -1);
+            const pcts = grades.map(g => g.maxScore > 0 ? (g.score / g.maxScore) * 100 : 0);
+            const avg = pcts.length ? pcts.reduce((a, b) => a + b, 0) / pcts.length : null;
+            const avgOf = arr => arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : null;
+            const testAvg = avgOf(grades.filter(g => g.type === "اختبار").map(g => (g.score / g.maxScore) * 100));
+            const hwAvg = avgOf(grades.filter(g => g.type === "واجب").map(g => (g.score / g.maxScore) * 100));
+            const partAvg = avgOf(grades.filter(g => g.type === "مشاركة").map(g => (g.score / g.maxScore) * 100));
+            const present = attendance.filter(a => a.status === ATT.PRESENT).length;
+            const late = attendance.filter(a => a.status === ATT.LATE).length;
+            const absent = attendance.filter(a => a.status === ATT.ABSENT).length;
+            const total = attendance.length;
+            const attendanceRate = total > 0 ? ((present + late * 0.5) / total) * 100 : null;
+            const absenceRate = attendanceRate !== null ? 100 - attendanceRate : null;
+            return { grades, attendance, avg, present, late, absent, total, attendanceRate, absenceRate, testAvg, hwAvg,
+                partAvg, evaluation: evalOf(avg) };
+        }
+
+        /* ============================== STORAGE & CLOUD ==============================
+           Real cloud database via Firebase Firestore, so the app works as a normal
+           website (GitHub Pages, Netlify, any host) for every student/parent/teacher,
+           not just inside a Claude Artifact. All devices read/write the SAME document
+           in real time via Firestore's onSnapshot listener - no manual "sync" needed.
+        ============================================================================= */
+        const firebaseConfig = {
+            apiKey: "AIzaSyBFQJ_Zhxo1MFU4H__RYrUROJ4rNgC1vzM",
+            authDomain: "dosha55-a8ad4.firebaseapp.com",
+            projectId: "dosha55-a8ad4",
+            storageBucket: "dosha55-a8ad4.firebasestorage.app",
+            messagingSenderId: "376100664833",
+            appId: "1:376100664833:web:6102f2faa957fbb0153200"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const firestore = firebase.firestore();
+        const dbDocRef = firestore.collection("mrdmdm").doc("main");
+
+        let cloudAvailable = true;
+        let lastKnownRaw = null;
+        let applyingRemoteUpdate = false;
+
+        async function loadDB() {
+            try {
+                const snap = await dbDocRef.get();
+                if (snap.exists && snap.data().json) {
+                    lastKnownRaw = snap.data().json;
+                    cloudAvailable = true;
+                    return JSON.parse(snap.data().json);
+                }
+            } catch (e) {
+                cloudAvailable = false;
+            }
+            const fresh = defaultDB();
+            const ok = await saveDB(fresh);
+            if (ok) lastKnownRaw = JSON.stringify(fresh);
+            return fresh;
+        }
+
+        async function saveDB(db) {
+            try {
+                const raw = JSON.stringify(db);
+                await dbDocRef.set({ json: raw, updatedAt: Date.now() });
+                lastKnownRaw = raw;
+                cloudAvailable = true;
+                return true;
+            } catch (e) {
+                cloudAvailable = false;
+                return false;
+            }
+        }
+
+        // Live real-time sync: fires automatically whenever ANY device writes to
+        // the shared document, so every open device updates instantly.
+        function startRealtimeSync() {
+            dbDocRef.onSnapshot(
+                (snap) => {
+                    cloudAvailable = true;
+                    if (!snap.exists) return;
+                    const raw = snap.data().json;
+                    if (raw && raw !== lastKnownRaw) {
+                        lastKnownRaw = raw;
+                        S.db = JSON.parse(raw);
+                        render();
+                    }
+                },
+                (err) => { cloudAvailable = false; render(); }
+            );
+        }
+
+        // Manual "refresh now" button still supported (just re-reads once).
+        async function refreshFromCloud(silent) {
+            try {
+                const snap = await dbDocRef.get();
+                if (snap.exists && snap.data().json && snap.data().json !== lastKnownRaw) {
+                    lastKnownRaw = snap.data().json;
+                    S.db = JSON.parse(snap.data().json);
+                    render();
+                    if (!silent) showToast("تم تحديث البيانات من السحابة", "success");
+                }
+                cloudAvailable = true;
+            } catch (e) {
+                cloudAvailable = false;
+                if (!silent) showToast("تعذر الاتصال بالسحابة", "error");
+            }
+        }
+
+        /* ============================== APP STATE ============================== */
+        let S = {
+            db: null,
+            session: null,
+            screen: "landing",
+            toast: null,
+            ui: {
+                regErrors: {},
+                regCreated: null,
+                loginErr: "",
+                studentTab: "overview",
+                staffTab: "overview",
+                openStudentId: null,
+                studentFileTab: "grades",
+                editingStudent: false,
+                showGradeForm: false,
+                editGradeId: null,
+                adminSubtab: "teachers",
+                lastCreatedTeacher: null,
+                dangerConfirm: false,
+                attDate: todayISO(),
+                attGrade: "",
+                attSection: "",
+                attMarks: {},
+                attCtxKey: "",
+                studentsQ: "",
+                studentsGrade: "",
+                studentsSort: "name",
+                confirmKey: null,
+                showPass: {},
+                regPhotoData: null,
+                editPhotoData: null,
+                editTeacherPhotoData: null,
+                logoPhotoData: null,
+                regGrade: "",
+                regVals: null,
+            }
+        };
+
+        function setState(patch) { Object.assign(S, patch); render(); }
+        function setUI(patch) { Object.assign(S.ui, patch); render(); }
+
+        function showToast(message, type) {
+            S.toast = { message, type };
+            render();
+            clearTimeout(window.__toastTimer);
+            window.__toastTimer = setTimeout(() => { S.toast = null; render(); }, 2800);
+        }
+        async function persist(newDb) {
+            S.db = newDb;
+            render();
+            const ok = await saveDB(newDb);
+            if (!ok) showToast("تعذر الحفظ على السحابة، تحقق من الاتصال وحاول مرة أخرى", "error");
+        }
+
+        /* ============================== ICONS ============================== */
+        function icon(name, size = 16, color = "currentColor") {
+            const s = size;
+            const paths = {
+                bulb: `<path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1v.2h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/>`,
+                user: `<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>`,
+                userPlus: `<circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3.1-6.5 7-6.5S16 17 16 21"/><path d="M19 8v6M22 11h-6"/>`,
+                login: `<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>`,
+                shield: `<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z"/>`,
+                phone: `<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/>`,
+                check: `<path d="M20 6L9 17l-5-5"/>`,
+                checkCircle: `<circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/>`,
+                xCircle: `<circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/>`,
+                clock: `<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>`,
+                bell: `<path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 21a2 2 0 0 0 4 0"/>`,
+                search: `<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>`,
+                plus: `<path d="M12 5v14M5 12h14"/>`,
+                edit: `<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>`,
+                trash: `<path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>`,
+                save: `<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M7 3v6h8V3"/>`,
+                arrowRight: `<path d="M5 12h14M13 6l6 6-6 6"/>`,
+                logout: `<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>`,
+                users: `<circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="17" cy="8" r="3"/><path d="M23 20c0-2.6-2-4.8-4.7-5.6"/>`,
+                bar: `<path d="M4 20V10M12 20V4M20 20v-7"/>`,
+                clipboard: `<rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M9 12h6M9 16h6"/>`,
+                settings: `<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/>`,
+                alert: `<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/>`,
+                eye: `<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/>`,
+                eyeOff: `<path d="M17.9 17.9A10.4 10.4 0 0 1 12 19c-7 0-11-7-11-7a18.5 18.5 0 0 1 4.2-5.1M9.9 4.2A9.1 9.1 0 0 1 12 4c7 0 11 7 11 7a18.6 18.6 0 0 1-2.2 3.1M14.1 14.1a3 3 0 1 1-4.2-4.2"/><path d="M1 1l22 22"/>`,
+                book: `<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5v-17Z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>`,
+                award: `<circle cx="12" cy="8" r="6"/><path d="M8.2 13.5 7 22l5-3 5 3-1.2-8.5"/>`,
+                trend: `<path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/>`,
+                school: `<path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M6 10v6c0 1.7 2.7 3 6 3s6-1.3 6-3v-6"/>`,
+                copy: `<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>`,
+                userCog: `<circle cx="10" cy="8" r="4"/><path d="M2 21c0-4 3.1-6.5 8-6.5"/><circle cx="18" cy="17" r="3"/><path d="M18 13.5v1M18 19.5v1M14.9 15l.9.5M21.1 18.5l.9.5M14.9 19l.9-.5M21.1 15.5l.9-.5"/>`,
+                refresh: `<path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>`,
+                camera: `<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>`,
+                image: `<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>`,
+                crown: `<path d="M2 19h20"/><path d="M4 19 2 8l6 4 4-7 4 7 6-4-2 11H4Z"/>`,
+                diamond: `<path d="M6 3h12l4 6-10 12L2 9Z"/><path d="M2 9h20M9 3l3 6-3 12M15 3l-3 6 3 12"/>`,
+            };
+            return `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths[name]||""}</svg>`;
+        }
+
+        /* ============================== PHOTO HELPERS ============================== */
+        function handlePhotoUpload(inputId, stateKey) {
+            const input = document.getElementById(inputId);
+            if (!input || !input.files || !input.files[0]) return;
+            const file = input.files[0];
+            if (file.size > 2 * 1024 * 1024) { showToast("حجم الصورة يجب أن يكون أقل من 2 ميجابايت", "error"); return; }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                S.ui[stateKey] = e.target.result;
+                render();
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function removePhoto(stateKey) {
+            S.ui[stateKey] = "__REMOVE__";
+            render();
+        }
+
+        function renderPhotoUpload(label, previewKey, stateKey, currentPhoto, inputId) {
+            const photoData = S.ui[stateKey];
+            let displayPhoto = null;
+            let hasPhoto = false;
+            if (photoData === "__REMOVE__") {
+                displayPhoto = null;
+            } else if (photoData) {
+                displayPhoto = photoData;
+                hasPhoto = true;
+            } else if (currentPhoto && currentPhoto.startsWith("data:")) {
+                displayPhoto = currentPhoto;
+                hasPhoto = true;
+            }
+            const initial = label ? label.trim()[0] || "؟" : "؟";
+            return `
+        <div class="field">
+          <span class="field-label">${label||"الصورة الشخصية"}</span>
+          <div class="photo-upload">
+            <div class="photo-preview ${hasPhoto?'has-photo':''}" id="${previewKey}">
+              ${displayPhoto ? `<img src="${esc(displayPhoto)}" alt="صورة">` : `<span>${esc(initial)}</span>`}
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <label class="btn btn-sm btn-secondary" style="cursor:pointer;">
+                ${icon("camera",14)} اختر صورة
+                <input type="file" accept="image/*" id="${inputId}" style="display:none;" onchange="handlePhotoUpload('${inputId}','${stateKey}')">
+              </label>
+              ${(hasPhoto||currentPhoto) ? `<button type="button" class="btn btn-sm btn-ghost" style="color:${C.danger}" onclick="removePhoto('${stateKey}')">${icon("trash",13)} إزالة</button>` : ""}
+            </div>
+          </div>
+        </div>`;
+        }
+
+        /* ============================== UI COMPONENT HELPERS ============================== */
+        function btn({ label, action = "", args = "", variant = "primary", size = "md", icon: ic, full, type = "button", extra = "" }) {
+            const cls = `btn btn-${variant} ${size==="lg"?"btn-lg":size==="sm"?"btn-sm":""} ${full?"btn-full":""}`;
+            const onclick = action ? `onclick="${action}(${args})"` : "";
+            return `<button type="${type}" class="${cls}" ${onclick} ${extra}>${ic?icon(ic,18):""}${label}</button>`;
+        }
+
+        function field({ label, inner, hint, error }) {
+            return `<label class="field">${label?`<span class="field-label">${label}</span>`:""}${inner}${hint?`<span class="field-hint">${hint}</span>`:""}${error?`<span class="field-error">${error}</span>`:""}</label>`;
+        }
+
+        function badge(text, color, bg) {
+            return `<span class="badge" style="color:${color};background:${bg}">${text}</span>`;
+        }
+
+        function progressBar(label, value, color) {
+            const v = (value === null || value === undefined || isNaN(value)) ? 0 : Math.max(0, Math.min(100, value));
+            const txt = (value === null || value === undefined || isNaN(value)) ? "—" : `${Math.round(v)}%`;
+            return `<div class="progress-row"><div class="progress-top"><span>${label}</span><span style="color:${color}">${txt}</span></div><div class="progress-track"><div class="progress-fill" style="width:${v}%;background:${color}"></div></div></div>`;
+        }
+
+        function emptyState(ic, text) {
+            return `<div class="empty"><div class="empty-icon">${icon(ic,20,C.inkSoft)}</div><p>${text}</p></div>`;
+        }
+
+        function tabs(tabsArr, active, onClickFn) {
+            return `<div class="tabs">${tabsArr.map(t=>`<button class="tab ${active===t.id?"active":""}" onclick="${onClickFn}('${t.id}')">${t.icon?icon(t.icon,15):""}${t.label}</button>`).join("")}</div>`;
+        }
+
+        function confirmBtn(key, action, args) {
+            if (S.ui.confirmKey === key) {
+                return `<button class="btn btn-danger btn-sm" onclick="${action}(${args})">تأكيد الحذف؟</button>`;
+            }
+            return `<button class="icon-btn" style="background:${C.dangerSoft};color:${C.danger}" onclick="setConfirmKey('${key}')">${icon("trash",15)}</button>`;
+        }
+
+        function setConfirmKey(k) {
+            S.ui.confirmKey = k;
+            render();
+            setTimeout(() => { if (S.ui.confirmKey === k) { S.ui.confirmKey = null; render(); } }, 2500);
+        }
+
+        function renderAvatar(photo, name, sizeClass = "avatar-sm", fallbackBg = C.primarySoft, fallbackColor = C.primary) {
+            const initial = (name || "؟").trim()[0] || "؟";
+            if (photo && photo.startsWith("data:")) {
+                return `<div class="${sizeClass}" style="background:${fallbackBg};color:${fallbackColor}"><img src="${esc(photo)}" alt="${esc(name)}"></div>`;
+            }
+            return `<div class="${sizeClass}" style="background:${fallbackBg};color:${fallbackColor}">${esc(initial)}</div>`;
+        }
+
+        function renderBrandLogo(sizeClass) {
+            sizeClass = sizeClass || "brand-logo";
+            const admin = S.db ? Object.values(S.db.teachers).find(t => t.role === "admin" && t.photo && t.photo.startsWith("data:")) : null;
+            if (admin) {
+                return `<div class="${sizeClass}"><img src="${esc(admin.photo)}" alt="Mr.DmDm"></div>`;
+            }
+            return `<div class="${sizeClass}">${icon("bulb", sizeClass==="brand-logo-lg"?20:18, "#fff")}</div>`;
+        }
+
+        /* ============================== SCREENS: PRE-AUTH ============================== */
+        function screenLanding() {
+            return `
+        <div class="landing-mint">
+        <div class="container" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:40px;padding-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:32px;">
+            ${renderBrandLogo("brand-logo-lg")}
+            <div>
+              <h1 style="font-size:20px;font-weight:800;color:#14202B;">Mr.DmDm</h1>
+              <p style="font-size:12px;color:#4B5A6B">لو على التفوق ناوي خذ مع الدمراوي</p>
+            </div>
+          </div>
+          <h2 style="font-size:24px;font-weight:800;line-height:1.4;margin-bottom:8px;">امتحانك في جيبك😉 <br/>سجل الان</h2>
+          <p style="font-size:14px;color:#4B5A6B;margin-bottom:32px;line-height:1.7;">اعرف درجتك وحدد مستواك معا صانع الأوائل MR.DmDm</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <button class="btn btn-lg btn-full btn-mint-primary" onclick="goto('register')">${icon("userPlus",18)}طالب جديد</button>
+            <button class="btn btn-lg btn-full btn-mint-secondary" onclick="goto('student-login')">${icon("login",18)}تسجيل دخول الطالب</button>
+            <button class="btn btn-lg btn-full btn-mint-ghost" onclick="goto('staff-login')">${icon("shield",18)}ملك التوقعات😍👑</button>
+          </div>
+          <div class="grid2" style="grid-template-columns:1fr 1fr 1fr;margin-top:40px;gap:12px;">
+            ${[["bar","درجات لحظية"],["checkCircle","حضور دقيق"],["award","تقييم تلقائي"]].map(([ic,t])=>`
+            <div class="card feature-chip p3" style="text-align:center;">
+              ${icon(ic,18,"#8B5CF6")}
+              <p style="font-size:11px;font-weight:700;color:#4B5A6B;margin-top:6px;">${t}</p>
+            </div>`).join("")}
+          </div>
+          <p style="text-align:center;font-size:11px;color:#6B7A8B;margin-top:32px;">جميع الحقوق محفوظه Dosha Elshmy</p>
+        </div>
+        </div>`;
+        }
+
+        function authShell(title, subtitle, body) {
+            return `
+        <div class="container" style="padding-top:24px;padding-bottom:40px;">
+          <button onclick="goto('landing')" style="display:flex;align-items:center;gap:6px;font-size:14px;font-weight:800;color:${C.inkSoft};margin-bottom:24px;">${icon("arrowRight",16)} رجوع</button>
+          <h2 style="font-size:20px;font-weight:800;margin-bottom:4px;">${title}</h2>
+          ${subtitle?`<p style="font-size:14px;color:${C.inkSoft};margin-bottom:24px;">${subtitle}</p>`:`<div style="height:20px"></div>`}
+          ${body}
+        </div>`;
+        }
+
+        function screenRegister() {
+            if (S.ui.regCreated) {
+                const created = S.ui.regCreated;
+                return authShell("تم التسجيل بنجاح", "", `
+          <div class="card p5" style="text-align:center;">
+            <div style="width:48px;height:48px;border-radius:99px;margin:0 auto 12px;background:${C.successSoft};display:flex;align-items:center;justify-content:center;">${icon("checkCircle",24,C.success)}</div>
+            <p style="font-size:14px;color:${C.inkSoft};margin-bottom:16px;">احتفظ بكود الطالب التالي — ستحتاجه لتسجيل الدخول:</p>
+            <div style="border-radius:12px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:8px;background:${C.goldSoft}">
+              <span style="font-family:monospace;font-size:18px;font-weight:800;letter-spacing:.05em;color:${C.gold}">${created.code}</span>
+              <button class="icon-btn" style="background:#fff" onclick="navigator.clipboard && navigator.clipboard.writeText('${created.code}'); showToast('تم النسخ','success')">${icon("copy",16,C.gold)}</button>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:8px;margin-top:16px;padding:12px;border-radius:12px;text-align:right;background:${C.warningSoft}">
+              ${icon("alert",16,C.warning)}
+              <p style="font-size:12px;color:#7A5C00;">هذا الكود لا يظهر لك مرة أخرى بهذا الشكل الكامل — احفظه في مكان آمن.</p>
+            </div>
+            ${btn({label:"تسجيل الدخول الآن", action:"goto", args:"'student-login'", icon:"login", full:true, extra:'style="margin-top:20px;"'})}
+          </div>`);
+            }
+            const grades = [...new Set(S.db.classes.map(c => c.grade))];
+            const sections = [...new Set(S.db.classes.filter(c => c.grade === (S.ui.regGrade || "")).map(c => c.section))];
+            const e = S.ui.regErrors || {};
+            return authShell("تسجيل طالب جديد", "عبّئ البيانات التالية لإنشاء حساب الطالب", `
+        <form onsubmit="submitRegister(event)">
+          ${renderPhotoUpload("صورة الطالب الشخصية", "reg-photo-preview", "regPhotoData", null, "reg-photo-input")}
+          ${field({label:"اسم الطالب بالكامل", error:e.name, inner:`<input class="input" id="reg-name" placeholder="مثال: أحمد محمد" value="${esc(S.ui.regVals?.name||"")}">`})}
+          ${field({label:"رقم هاتف الطالب", error:e.studentPhone, inner:`<input class="input" id="reg-sphone" inputmode="numeric" placeholder="01xxxxxxxxx" value="${esc(S.ui.regVals?.studentPhone||"")}">`})}
+          ${field({label:"رقم هاتف ولي الأمر", error:e.guardianPhone, inner:`<input class="input" id="reg-gphone" inputmode="numeric" placeholder="01xxxxxxxxx" value="${esc(S.ui.regVals?.guardianPhone||"")}">`})}
+          <div class="row2">
+            ${field({label:"الصف الدراسي", error:e.grade, inner:`<select class="input" id="reg-grade" onchange="setUI({regGrade:this.value})"><option value="">اختر</option>${grades.map(g=>`<option value="${esc(g)}" ${S.ui.regGrade===g?"selected":""}>${esc(g)}</option>`).join("")}</select>`})}
+            ${field({label:"الفصل / المجموعة", inner:`<select class="input" id="reg-section"><option value="">اختر</option>${sections.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("")}</select>`})}
+          </div>
+          ${field({label:"تاريخ الميلاد", error:e.dob, inner:`<input class="input" type="date" id="reg-dob" value="${esc(S.ui.regVals?.dob||"")}">`})}
+          ${field({label:"كلمة المرور", error:e.password, hint:"تُستخدم مع كود الطالب لتسجيل الدخول", inner:`<input class="input" type="password" id="reg-pass">`})}
+          ${field({label:"تأكيد كلمة المرور", error:e.confirm, inner:`<input class="input" type="password" id="reg-confirm">`})}
+          ${btn({label:"إنشاء الحساب", type:"submit", icon:"userPlus", full:true, size:"lg"})}
+        </form>`);
+        }
+
+        function submitRegister(ev) {
+            ev.preventDefault();
+            const vals = {
+                name: document.getElementById("reg-name").value.trim(),
+                studentPhone: document.getElementById("reg-sphone").value.replace(/\D/g, ""),
+                guardianPhone: document.getElementById("reg-gphone").value.replace(/\D/g, ""),
+                grade: document.getElementById("reg-grade").value,
+                section: document.getElementById("reg-section").value,
+                dob: document.getElementById("reg-dob").value,
+                password: document.getElementById("reg-pass").value,
+                confirm: document.getElementById("reg-confirm").value,
+            };
+            S.ui.regVals = vals;
+            const e = {};
+            if (!vals.name) e.name = "الاسم مطلوب";
+            if (!/^\d{8,15}$/.test(vals.studentPhone)) e.studentPhone = "رقم هاتف غير صالح";
+            if (!/^\d{8,15}$/.test(vals.guardianPhone)) e.guardianPhone = "رقم هاتف غير صالح";
+            if (vals.studentPhone && vals.guardianPhone && vals.studentPhone === vals.guardianPhone) e.guardianPhone = "لا يمكن استخدام نفس رقم الطالب لولي الأمر";
+            if (!vals.grade) e.grade = "اختر الصف الدراسي";
+            if (!vals.dob) e.dob = "تاريخ الميلاد مطلوب";
+            if (!vals.password || vals.password.length < 4) e.password = "كلمة مرور 4 أحرف على الأقل";
+            if (vals.password !== vals.confirm) e.confirm = "كلمتا المرور غير متطابقتين";
+            const allStudents = Object.values(S.db.students);
+            if (allStudents.some(s => s.studentPhone === vals.studentPhone || s.guardianPhone === vals.studentPhone)) e.studentPhone = "هذا الرقم مستخدم بالفعل في النظام";
+            if (allStudents.some(s => s.guardianPhone === vals.guardianPhone || s.studentPhone === vals.guardianPhone)) e.guardianPhone = "هذا الرقم مستخدم بالفعل في النظام";
+            S.ui.regErrors = e;
+            if (Object.keys(e).length) { render(); return; }
+            const existingCodes = new Set(Object.values(S.db.students).map(s => s.code));
+            const code = genStudentCode(existingCodes);
+            const id = uid("STU");
+            let photo = "";
+            if (S.ui.regPhotoData && S.ui.regPhotoData !== "__REMOVE__") photo = S.ui.regPhotoData;
+            const student = {
+                id,
+                code,
+                password: vals.password,
+                name: vals.name,
+                photo,
+                studentPhone: vals.studentPhone,
+                guardianPhone: vals.guardianPhone,
+                grade: vals.grade,
+                section: vals.section,
+                dob: vals.dob,
+                status: "نشط",
+                notes: [],
+                createdAt: new Date().toISOString()
+            };
+            const newDb = { ...S.db, students: { ...S.db.students, [id]: student } };
+            newDb.logs = [{ id: uid("LOG"), actor: "النظام", action: `تسجيل طالب جديد: ${student.name} (${code})`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+            persist(newDb);
+            S.ui.regCreated = student;
+            S.ui.regVals = null;
+            S.ui.regErrors = {};
+            S.ui.regPhotoData = null;
+            showToast("تم إنشاء حساب الطالب بنجاح", "success");
+        }
+
+        function screenStudentLogin() {
+            return authShell("تسجيل دخول الطالب", "", `
+        <form onsubmit="submitStudentLogin(event)">
+          ${field({label:"كود الطالب", inner:`<input class="input" id="sl-code" placeholder="STD-${YEAR}-000000" style="font-family:monospace">`})}
+          ${field({label:"كلمة المرور", error:S.ui.loginErr, inner:`
+            <div class="input-wrap">
+              <input class="input" type="${S.ui.showPass.sl?'text':'password'}" id="sl-pass">
+              <button type="button" class="input-icon-btn" onclick="S.ui.showPass.sl=!S.ui.showPass.sl; render()">${icon(S.ui.showPass.sl?'eyeOff':'eye',17)}</button>
+            </div>`})}
+          ${btn({label:"دخول", type:"submit", icon:"login", full:true, size:"lg"})}
+          <button type="button" onclick="goto('register')" style="width:100%;text-align:center;font-size:14px;font-weight:800;margin-top:16px;color:${C.primary}">ليس لديك حساب؟ سجّل الآن</button>
+        </form>`);
+        }
+
+        function submitStudentLogin(ev) {
+            ev.preventDefault();
+            const code = document.getElementById("sl-code").value.trim().toLowerCase();
+            const pass = document.getElementById("sl-pass").value;
+            const student = Object.values(S.db.students).find(s => s.code.toLowerCase() === code);
+            if (!student || student.password !== pass) {
+                S.ui.loginErr = "كود الطالب أو كلمة المرور غير صحيحة";
+                render();
+                return;
+            }
+            S.session = { type: "student", id: student.id };
+            S.ui.loginErr = "";
+            showToast(`مرحبًا ${student.name}`, "success");
+            render();
+        }
+
+        function screenStaffLogin() {
+            return authShell("#صانع الأوائل", "نورت يمستر سجل دخولك", `
+        <form onsubmit="submitStaffLogin(event)">
+          ${field({label:"كود المدرس / المدير", inner:`<input class="input" id="tl-code" placeholder="TEACHER-00000" style="font-family:monospace">`})}
+          ${field({label:"كلمة المرور", error:S.ui.loginErr, inner:`
+            <div class="input-wrap">
+              <input class="input" type="${S.ui.showPass.tl?'text':'password'}" id="tl-pass">
+              <button type="button" class="input-icon-btn" onclick="S.ui.showPass.tl=!S.ui.showPass.tl; render()">${icon(S.ui.showPass.tl?'eyeOff':'eye',17)}</button>
+            </div>`})}
+          ${btn({label:"دخول", type:"submit", icon:"shield", full:true, size:"lg"})}
+        </form>`);
+        }
+
+        function submitStaffLogin(ev) {
+            ev.preventDefault();
+            const code = document.getElementById("tl-code").value.trim().toLowerCase();
+            const pass = document.getElementById("tl-pass").value;
+            const staff = Object.values(S.db.teachers).find(t => t.code.toLowerCase() === code);
+            if (!staff || staff.password !== pass) {
+                S.ui.loginErr = "الكود أو كلمة المرور غير صحيحة";
+                render();
+                return;
+            }
+            S.session = { type: staff.role, id: staff.id };
+            S.ui.loginErr = "";
+            showToast(`مرحبًا ${staff.name}`, "success");
+            render();
+        }
+
+        function goto(screen) {
+            S.screen = screen;
+            S.ui.loginErr = "";
+            S.ui.regPhotoData = null;
+            S.ui.regCreated = null;
+            S.ui.regVals = null;
+            S.ui.regErrors = {};
+            render();
+        }
+
+        /* ============================== ID CARD (DIAMOND THEME) ============================== */
+        function idCard(student, stats, compact) {
+            const ev = stats.evaluation;
+            const photo = student.photo || "";
+            const initial = (student.name || "؟").trim()[0] || "؟";
+            const g = (v) => (v === null || v === undefined || isNaN(v)) ? 0 : Math.max(0, Math.min(100, v));
+            return `
+        <div class="id-card-diamond">
+          <div class="dc-inner">
+            <div class="dc-brand">${icon("diamond",13,"#E8C170")} <span>Mr.DmDm</span></div>
+            <div class="dc-center">
+              <div class="dc-photo-wrap">
+                <div class="dc-photo">
+                  ${photo && photo.startsWith("data:") ? `<img src="${esc(photo)}" alt="${esc(student.name)}">` : esc(initial)}
+                </div>
+              </div>
+              <div class="dc-name">${esc(student.name)}</div>
+              <div class="dc-code">${esc(student.code)}</div>
+              <div class="dc-sub">${esc(student.grade)}${student.section?` — ${esc(student.section)}`:""}</div>
+              <div class="dc-status">${esc(student.status||"نشط")}</div>
+            </div>
+            ${!compact ? `
+            <div class="dc-chiprow">
+              <div class="dc-chip active"><span>${stats.avg===null?"—":Math.round(stats.avg)+"%"}</span><span>المتوسط</span></div>
+              <div class="dc-chip"><span>${stats.attendanceRate===null?"—":Math.round(stats.attendanceRate)+"%"}</span><span>الحضور</span></div>
+              <div class="dc-chip"><span>${stats.absenceRate===null?"—":Math.round(stats.absenceRate)+"%"}</span><span>الغياب</span></div>
+              <div class="dc-chip"><span style="color:${ev.color==='#6B7280'?'#EAF1FF':'#F5DFA0'}">${ev.label}</span><span>التقييم</span></div>
+            </div>
+            <div class="dc-gauges">
+              <div class="dc-gauge-title">مصفوفة الأداء الماسي</div>
+              <div class="dc-gauge-row">
+                ${[["اختبارات",stats.testAvg],["واجبات",stats.hwAvg],["مشاركة",stats.partAvg],["حضور",stats.attendanceRate]].map(([label,val])=>`
+                <div class="dc-gauge">
+                  <div class="dc-gauge-track"><div class="dc-gauge-fill" style="height:${g(val)}%"></div></div>
+                  <div class="dc-gauge-pct">${val===null||val===undefined||isNaN(val)?"—":Math.round(val)+"%"}</div>
+                  <div class="dc-gauge-label">${label}</div>
+                </div>`).join("")}
+              </div>
+            </div>
+            <div class="dc-phones">
+              <span>${icon("phone",11)} ${esc(student.studentPhone)}</span>
+              <span>${icon("phone",11)} ولي الأمر: ${esc(student.guardianPhone)}</span>
+            </div>` : ""}
+          </div>
+        </div>`;
+        }
+
+        /* ============================== PORTAL SHELL ============================== */
+        function portalShell(title, subtitle, bodyHtml, themeClass) {
+            const dot = cloudAvailable
+                ? `<span class="sync-dot" style="background:${C.successSoft};color:${C.success}">${icon("checkCircle",11)} متصل بالسحابة</span>`
+                : `<span class="sync-dot" style="background:${C.dangerSoft};color:${C.danger}">${icon("xCircle",11)} غير متصل</span>`;
+            return `
+        <div class="${themeClass||''}" style="min-height:100vh;padding-bottom:40px;">
+          <div class="app-header">
+            <div class="app-header-inner">
+              <div style="display:flex;align-items:center;gap:8px;">
+                ${renderBrandLogo()}
+                <div><p style="font-size:14px;font-weight:800;line-height:1;">${title}</p>
+                ${subtitle?`<p style="font-size:11px;margin-top:3px;color:${C.inkSoft}">${subtitle}</p>`:""}</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                ${dot}
+                <button class="icon-btn" title="تحديث من السحابة" onclick="refreshFromCloud(false)">${icon("refresh",16)}</button>
+                <button class="icon-btn" onclick="logout()">${icon("logout",16)}</button>
+              </div>
+            </div>
+          </div>
+          <div class="container wide" style="padding-top:20px;">${bodyHtml}</div>
+        </div>`;
+        }
+
+        function logout() {
+            S.session = null;
+            S.ui.openStudentId = null;
+            S.ui.staffTab = "overview";
+            S.ui.studentTab = "overview";
+            S.ui.regPhotoData = null;
+            S.ui.editPhotoData = null;
+            S.ui.editTeacherPhotoData = null;
+            S.ui.logoPhotoData = null;
+            render();
+        }
+
+        /* ============================== STUDENT PORTAL ============================== */
+        function renderStudentNotesBanner(notes) {
+            return `<div class="card p4" style="margin-bottom:16px;border-right:4px solid ${C.gold};background:${C.goldSoft}">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            ${icon("alert",18,C.gold)}
+            <h4 style="font-weight:800;color:#7A5C00;">ملاحظات المستر</h4>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            ${notes.slice(0,3).map(n=>`
+            <div>
+              <p style="font-size:14px;color:${C.ink};">${esc(n.text)}</p>
+              <p style="font-size:11px;margin-top:2px;color:${C.inkSoft}">${esc(n.author)} · ${fmtDateTime(n.date)}</p>
+            </div>`).join("")}
+          </div>
+        </div>`;
+        }
+
+        function screenStudentPortal() {
+            const student = S.db.students[S.session.id];
+            if (!student) return `<p style="padding:40px;text-align:center;">تعذر إيجاد بيانات الطالب</p>`;
+            const stats = calcStats(S.db, S.session.id);
+            const notifs = S.db.notifications[S.session.id] || [];
+            const notes = student.notes || [];
+            const t = S.ui.studentTab;
+            let tabBody = "";
+            if (t === "overview") {
+                tabBody = `<div class="card p4">
+            <h4 style="font-weight:800;margin-bottom:16px;">مستوى الأداء</h4>
+            ${progressBar("الاختبارات", stats.testAvg, C.primary)}
+            ${progressBar("الواجبات", stats.hwAvg, C.info)}
+            ${progressBar("المشاركة", stats.partAvg, C.gold)}
+            ${progressBar("الحضور", stats.attendanceRate, C.success)}
+            ${progressBar("المتوسط العام", stats.avg, stats.evaluation.color)}
+          </div>`;
+            } else if (t === "grades") {
+                tabBody = renderGradesTable(stats.grades);
+            } else if (t === "attendance") {
+                tabBody = renderAttendanceList(stats.attendance);
+            } else if (t === "notif") {
+                tabBody = notifs.length === 0 ? `<div class="card p3">${emptyState("bell","لا توجد إشعارات بعد")}</div>` : `
+          <div class="card p3 divide">
+            ${notifs.map(n=>`
+            <div style="padding:12px 0;display:flex;gap:12px;">
+              <div style="width:32px;height:32px;border-radius:99px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:${C.primarySoft}">${icon("bell",14,C.primary)}</div>
+              <div><p style="font-size:14px;">${esc(n.text)}</p><p style="font-size:11px;margin-top:2px;color:${C.inkSoft}">${fmtDateTime(n.date)}</p></div>
+            </div>`).join("")}
+          </div>`;
+            }
+            return portalShell("حسابي", esc(student.name), `
+          ${notes.length ? renderStudentNotesBanner(notes) : ""}
+          ${idCard(student, stats, false)}
+          <div style="margin-top:20px;">${tabs([
+            {id:"overview",label:"نظرة عامة",icon:"trend"},
+            {id:"grades",label:"الدرجات",icon:"book"},
+            {id:"attendance",label:"الحضور",icon:"clipboard"},
+            {id:"notif",label:"الإشعارات",icon:"bell"},
+          ], t, "setStudentTab")}</div>
+          <div style="margin-top:16px;">${tabBody}</div>
+        `);
+        }
+
+        function setStudentTab(id) { S.ui.studentTab = id; render(); }
+
+        function renderGradesTable(grades) {
+            if (!grades.length) return `<div class="card p3">${emptyState("book","لا توجد درجات مسجلة بعد")}</div>`;
+            return `<div class="card table-wrap"><table>
+          <thead><tr><th>المادة</th><th>النوع</th><th>الاختبار</th><th>الدرجة</th><th>النسبة</th><th>التاريخ</th></tr></thead>
+          <tbody>${grades.map(g=>{
+            const pct = Math.round((g.score/g.maxScore)*100);
+            const ev = evalOf(pct);
+            return `<tr>
+              <td style="font-weight:700;">${esc(g.subject)}</td>
+              <td style="color:${C.inkSoft}">${esc(g.type)}</td>
+              <td style="color:${C.inkSoft}">${esc(g.examName)}</td>
+              <td style="font-weight:700;">${g.score} / ${g.maxScore}</td>
+              <td>${badge(pct+"%", ev.color, ev.bg)}</td>
+              <td style="color:${C.inkSoft}">${fmtDate(g.date)}</td>
+            </tr>`;
+          }).join("")}</tbody>
+        </table></div>`;
+        }
+
+        function renderAttendanceList(attendance) {
+            if (!attendance.length) return `<div class="card p3">${emptyState("clipboard","لا يوجد سجل حضور بعد")}</div>`;
+            const cfg = {
+                [ATT.PRESENT]: { ic: "checkCircle", color: C.success, bg: C.successSoft },
+                [ATT.ABSENT]: { ic: "xCircle", color: C.danger, bg: C.dangerSoft },
+                [ATT.LATE]: { ic: "clock", color: C.warning, bg: C.warningSoft },
+            };
+            return `<div class="card p3 divide">${attendance.map(a=>{
+            const c = cfg[a.status];
+            return `<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;">
+              <div style="display:flex;align-items:center;gap:10px;">
+                <div style="width:32px;height:32px;border-radius:99px;display:flex;align-items:center;justify-content:center;background:${c.bg}">${icon(c.ic,15,c.color)}</div>
+                <span style="font-size:14px;font-weight:700;color:${c.color}">${a.status}</span>
+              </div>
+              <span style="font-size:12px;color:${C.inkSoft}">${fmtDate(a.date)}</span>
+            </div>`;
+          }).join("")}</div>`;
+        }
+
+        /* ============================== STAFF PORTAL ============================== */
+        function screenStaffPortal() {
+            const me = S.db.teachers[S.session.id];
+            if (!me) return `<p style="padding:40px;text-align:center;">تعذر إيجاد بيانات الحساب</p>`;
+            const isAdmin = me.role === "admin";
+            const themeClass = isAdmin ? "theme-dark-gold" : "";
+            if (S.ui.openStudentId) {
+                return portalShell("Mr.DmDm", `${esc(me.name)} · ${isAdmin?"مدير":"مدرس"}`,
+                renderStudentFile(S.ui.openStudentId, me.name), themeClass);
+            }
+            const tabList = [
+                { id: "overview", label: "نظرة عامة", icon: "bar" },
+                { id: "students", label: "الطلاب", icon: "users" },
+                { id: "attendance", label: "تسجيل حضور", icon: "clipboard" },
+            ];
+            if (isAdmin) tabList.push({ id: "admin", label: "الإدارة", icon: "settings" });
+            const t = S.ui.staffTab;
+            let body = "";
+            if (t === "overview") body = renderStaffOverview(isAdmin, me.name);
+            else if (t === "students") body = renderStudentsList();
+            else if (t === "attendance") body = renderAttendanceSession(me.name);
+            else if (t === "admin" && isAdmin) body = renderAdminPanel(me.name);
+            return portalShell("Mr.DmDm", `${esc(me.name)} · ${isAdmin?"مدير":"مدرس"}`, `
+          ${tabs(tabList, t, "setStaffTab")}
+          <div style="margin-top:16px;">${body}</div>
+        `, themeClass);
+        }
+
+        function setStaffTab(id) { S.ui.staffTab = id; render(); }
+
+        function statCard(ic, label, value, color) {
+            return `<div class="card p3 stat-card">
+          <div class="stat-icon" style="background:${color}18"> ${icon(ic,16,color)}</div>
+          <div><div class="stat-value">${value}</div><div class="stat-label">${label}</div></div>
+        </div>`;
+        }
+
+        function renderStaffOverview(isAdmin, actorName) {
+            const db = S.db;
+            const students = Object.values(db.students);
+            const today = todayISO();
+            const attToday = Object.values(db.attendance).filter(a => a.date === today);
+            const presentToday = attToday.filter(a => a.status === ATT.PRESENT).length;
+            const absentToday = attToday.filter(a => a.status === ATT.ABSENT).length;
+            const allPcts = Object.values(db.grades).map(g => (g.score / g.maxScore) * 100);
+            const avgAll = allPcts.length ? Math.round(allPcts.reduce((a, b) => a + b, 0) / allPcts.length) : null;
+            const withStats = students.map(s => ({ s, stats: calcStats(db, s.id) }));
+            const top = withStats.filter(x => x.stats.avg !== null).sort((a, b) => b.stats.avg - a.stats.avg).slice(0, 5);
+            const needAttn = withStats.filter(x => (x.stats.avg !== null && x.stats.avg < 50) || (x.stats.attendanceRate !== null && x.stats.attendanceRate < 75));
+            return `
+        <div class="grid2">
+          ${statCard("users","إجمالي الطلاب",students.length,isAdmin?"#E8C170":C.primary)}
+          ${statCard("checkCircle","حاضرون اليوم",presentToday,isAdmin?"#E8C170":C.success)}
+          ${statCard("xCircle","غائبون اليوم",absentToday,isAdmin?"#E8C170":C.danger)}
+          ${statCard("bar","متوسط الدرجات",avgAll===null?"—":avgAll+"%",isAdmin?"#E8C170":C.info)}
+        </div>
+        <div class="card p4" style="margin-top:12px;">
+          <h4 style="font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:6px;">${icon("award",16,isAdmin?"#E8C170":C.gold)} الأعلى أداءً</h4>
+          ${top.length===0 ? `<p style="font-size:14px;color:${C.inkSoft}">لا توجد بيانات كافية بعد</p>` : `<div style="display:flex;flex-direction:column;gap:8px;">${top.map(({s,stats})=>`
+            <button class="list-item-btn" style="display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:12px;background:${isAdmin?'rgba(232,193,112,.08)':C.primarySoft}" onclick="openStudent('${s.id}')">
+              <span style="font-size:14px;font-weight:700;">${esc(s.name)}</span>
+              ${badge(Math.round(stats.avg)+"%", isAdmin?"#1A1200":C.primaryDark, isAdmin?"#E8C170":"#fff")}
+            </button>`).join("")}</div>`}
+        </div>
+        <div class="card p4" style="margin-top:12px;">
+          <h4 style="font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:6px;">${icon("alert",16,C.danger)} يحتاجون متابعة</h4>
+          ${needAttn.length===0 ? `<p style="font-size:14px;color:${C.inkSoft}">لا يوجد طلاب بحاجة لمتابعة حاليًا</p>` : `<div style="display:flex;flex-direction:column;gap:8px;">${needAttn.map(({s,stats})=>`
+            <button class="list-item-btn" style="display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:12px;background:${C.dangerSoft}" onclick="openStudent('${s.id}')">
+              <span style="font-size:14px;font-weight:700;color:#1A1D28;">${esc(s.name)}</span>
+              <span style="font-size:12px;font-weight:700;color:${C.danger}">${stats.avg!==null && stats.avg<50 ? `متوسط ${Math.round(stats.avg)}%` : `حضور ${Math.round(stats.attendanceRate)}%`}</span>
+            </button>`).join("")}</div>`}
+        </div>
+        <div class="card p4" style="margin-top:12px;">
+          <h4 style="font-weight:800;margin-bottom:12px;">آخر العمليات</h4>
+          ${db.logs.length===0 ? `<p style="font-size:14px;color:${C.inkSoft}">لا يوجد سجل بعد</p>` : `<div style="display:flex;flex-direction:column;gap:10px;">${db.logs.slice(0, 8).map(l => `
+            <div style="font-size:12px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid ${C.border};padding-bottom:6px;">
+              <span><strong>${esc(l.actor)}:</strong> ${esc(l.action)}</span>
+              <span style="color:${C.inkSoft};font-size:10px;">${fmtDateTime(l.date)}</span>
+            </div>
+          `).join("")}</div>`}
+        </div>`;
+        }
+
+        function renderStudentsList() {
+            const db = S.db;
+            let students = Object.values(db.students);
+            const q = (S.ui.studentsQ || "").toLowerCase().trim();
+            const gradeFilter = S.ui.studentsGrade || "";
+            const sortBy = S.ui.studentsSort || "name";
+
+            if (q) {
+                students = students.filter(s => s.name.toLowerCase().includes(q) || s.code.toLowerCase().includes(q) || s.studentPhone.includes(q) || s.guardianPhone.includes(q));
+            }
+            if (gradeFilter) {
+                students = students.filter(s => s.grade === gradeFilter);
+            }
+
+            students.sort((a, b) => {
+                if (sortBy === "name") return a.name.localeCompare(b.name, "ar");
+                const statsA = calcStats(db, a.id);
+                const statsB = calcStats(db, b.id);
+                if (sortBy === "avg") return (statsB.avg || 0) - (statsA.avg || 0);
+                if (sortBy === "grade") return a.grade.localeCompare(b.grade, "ar");
+                return 0;
+            });
+
+            const gradesList = [...new Set(S.db.classes.map(c => c.grade))];
+
+            return `
+        <div class="card p4" style="margin-bottom:16px;">
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="input-wrap">
+              <input class="input" placeholder="بحث باسم الطالب أو الكود أو الهاتف..." value="${esc(S.ui.studentsQ||"")}" oninput="S.ui.studentsQ=this.value; render();">
+            </div>
+            <div class="row2">
+              <select class="input" onchange="S.ui.studentsGrade=this.value; render();">
+                <option value="">كل الصفوف</option>
+                ${gradesList.map(g => `<option value="${esc(g)}" ${gradeFilter===g?"selected":""}>${esc(g)}</option>`).join("")}
+              </select>
+              <select class="input" onchange="S.ui.studentsSort=this.value; render();">
+                <option value="name" ${sortBy==="name"?"selected":""}>ترتيب حسب الاسم</option>
+                <option value="avg" ${sortBy==="avg"?"selected":""}>ترتيب حسب التقييم</option>
+                <option value="grade" ${sortBy==="grade"?"selected":""}>ترتيب حسب الصف</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        ${students.length === 0 ? `<div class="card p3">${emptyState("users", "لا يوجد طلاب يطابقون خيارات البحث")}</div>` : `
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          ${students.map(s => {
+            const stats = calcStats(db, s.id);
+            const ev = stats.evaluation;
+            return `
+            <div class="card p4" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+              <div style="display:flex;align-items:center;gap:12px;cursor:pointer;" onclick="openStudent('${s.id}')">
+                ${renderAvatar(s.photo, s.name, "avatar-sm")}
+                <div>
+                  <h4 style="font-size:15px;font-weight:800;">${esc(s.name)}</h4>
+                  <p style="font-size:12px;color:${C.inkSoft}">${esc(s.code)} · ${esc(s.grade)} ${s.section?`(${esc(s.section)})`:""}</p>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                ${badge(stats.avg===null?"—":Math.round(stats.avg)+"%", ev.color, ev.bg)}
+                <button class="btn btn-sm btn-subtle" onclick="openStudent('${s.id}')">الملف</button>
+              </div>
+            </div>`;
+          }).join("")}
+        </div>`}`;
+        }
+
+        /* ============================== STUDENT FILE & EDITING ============================== */
+        function openStudent(id) {
+            S.ui.openStudentId = id;
+            S.ui.studentFileTab = "grades";
+            S.ui.showGradeForm = false;
+            S.ui.editingStudent = false;
+            S.ui.editPhotoData = null;
+            render();
+        }
+
+        function closeStudentFile() {
+            S.ui.openStudentId = null;
+            render();
+        }
+
+        function renderStudentFile(studentId, actorName) {
+            const student = S.db.students[studentId];
+            if (!student) return `<p style="padding:20px;">الطالب غير موجود</p>`;
+            const stats = calcStats(S.db, studentId);
+            const t = S.ui.studentFileTab || "grades";
+
+            let tabContent = "";
+
+            if (t === "grades") {
+                tabContent = `
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <h4 style="font-weight:800;">سجل الدرجات</h4>
+              ${btn({label:"إضافة درجة", icon:"plus", size:"sm", action:"toggleGradeForm"})}
+            </div>
+            ${S.ui.showGradeForm ? renderGradeForm(studentId, actorName) : ""}
+            ${renderGradesTableWithDelete(stats.grades, actorName)}`;
+            } else if (t === "attendance") {
+                tabContent = renderAttendanceList(stats.attendance);
+            } else if (t === "notes") {
+                tabContent = renderNotesTab(student, actorName);
+            } else if (t === "edit") {
+                tabContent = renderEditStudentForm(student, actorName);
+            }
+
+            return `
+        <div style="margin-bottom:16px;">
+          <button class="btn btn-sm btn-ghost" onclick="closeStudentFile()">${icon("arrowRight",16)} العودة لقائمة الطلاب</button>
+        </div>
+        ${idCard(student, stats, false)}
+        <div style="margin-top:16px;margin-bottom:16px;">
+          ${tabs([
+            {id:"grades", label:"الدرجات", icon:"book"},
+            {id:"attendance", label:"الحضور", icon:"clipboard"},
+            {id:"notes", label:"الملاحظات", icon:"alert"},
+            {id:"edit", label:"تعديل البيانات", icon:"edit"}
+          ], t, "setStudentFileTab")}
+        </div>
+        ${tabContent}`;
+        }
+
+        function setStudentFileTab(t) {
+            S.ui.studentFileTab = t;
+            render();
+        }
+
+        function toggleGradeForm() {
+            S.ui.showGradeForm = !S.ui.showGradeForm;
+            render();
+        }
+
+        function renderGradeForm(studentId, actorName) {
+            return `
+        <div class="card p4" style="margin-bottom:16px;background:${C.primarySoft}">
+          <h4 style="font-size:14px;font-weight:800;margin-bottom:12px;">تسجيل درجة جديدة</h4>
+          <form onsubmit="submitNewGrade(event, '${studentId}', '${esc(actorName)}')">
+            ${field({label:"اسم المادة / الاختبار", inner:`<input class="input" id="ng-subject" placeholder="مثال: رياضيات / اختبار الشهر" required>`})}
+            <div class="row2">
+              ${field({label:"نوع التقييم", inner:`<select class="input" id="ng-type">${GRADE_TYPES.map(gt=>`<option value="${gt}">${gt}</option>`).join("")}</select>`})}
+              ${field({label:"عنوان الامتحان", inner:`<input class="input" id="ng-exam" placeholder="اختبار 1">`})}
+            </div>
+            <div class="row2">
+              ${field({label:"الدرجة المحصلة", inner:`<input class="input" type="number" step="0.5" id="ng-score" required>`})}
+              ${field({label:"الدرجة النهائية", inner:`<input class="input" type="number" step="0.5" id="ng-max" value="100" required>`})}
+            </div>
+            ${field({label:"تاريخ التقييم", inner:`<input class="input" type="date" id="ng-date" value="${todayISO()}">`})}
+            <div style="display:flex;gap:8px;margin-top:10px;">
+              ${btn({label:"حفظ الدرجة", type:"submit", icon:"save", size:"sm"})}
+              ${btn({label:"إلغاء", variant:"ghost", size:"sm", action:"toggleGradeForm"})}
+            </div>
+          </form>
+        </div>`;
+        }
+
+        function submitNewGrade(ev, studentId, actorName) {
+            ev.preventDefault();
+            const subject = document.getElementById("ng-subject").value.trim();
+            const type = document.getElementById("ng-type").value;
+            const examName = document.getElementById("ng-exam").value.trim() || type;
+            const score = parseFloat(document.getElementById("ng-score").value);
+            const maxScore = parseFloat(document.getElementById("ng-max").value);
+            const date = document.getElementById("ng-date").value || todayISO();
+
+            if (isNaN(score) || isNaN(maxScore) || maxScore <= 0) {
+                showToast("برجاء إدخال قيم درجات صالحة", "error");
+                return;
+            }
+
+            const gId = uid("GRD");
+            const gradeObj = { id: gId, studentId, subject, type, examName, score, maxScore, date, createdAt: new Date().toISOString() };
+            
+            const newDb = { ...S.db, grades: { ...S.db.grades, [gId]: gradeObj } };
+            const student = S.db.students[studentId];
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `إضافة درجة للطالب ${student.name}: ${score}/${maxScore} في ${subject}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            const notifId = uid("NTF");
+            const notifs = newDb.notifications[studentId] || [];
+            newDb.notifications[studentId] = [{ id: notifId, text: `تم إضافة درجة جديدة: ${score}/${maxScore} في ${subject}`, date: new Date().toISOString() }, ...notifs];
+
+            persist(newDb);
+            S.ui.showGradeForm = false;
+            showToast("تم حفظ الدرجة وإرسال إشعار للطالب", "success");
+        }
+
+        function renderGradesTableWithDelete(grades, actorName) {
+            if (!grades.length) return `<div class="card p3">${emptyState("book","لا توجد درجات مسجلة بعد")}</div>`;
+            return `<div class="card table-wrap"><table>
+          <thead><tr><th>المادة</th><th>النوع</th><th>الاختبار</th><th>الدرجة</th><th>النسبة</th><th>التاريخ</th><th>إجراء</th></tr></thead>
+          <tbody>${grades.map(g => {
+            const pct = Math.round((g.score/g.maxScore)*100);
+            const ev = evalOf(pct);
+            return `<tr>
+              <td style="font-weight:700;">${esc(g.subject)}</td>
+              <td style="color:${C.inkSoft}">${esc(g.type)}</td>
+              <td style="color:${C.inkSoft}">${esc(g.examName)}</td>
+              <td style="font-weight:700;">${g.score} / ${g.maxScore}</td>
+              <td>${badge(pct+"%", ev.color, ev.bg)}</td>
+              <td style="color:${C.inkSoft}">${fmtDate(g.date)}</td>
+              <td>${confirmBtn('del_g_'+g.id, 'deleteGrade', `'${g.id}', '${esc(actorName)}'`)}</td>
+            </tr>`;
+          }).join("")}</tbody>
+        </table></div>`;
+        }
+
+        function deleteGrade(gId, actorName) {
+            const grade = S.db.grades[gId];
+            if (!grade) return;
+            const newGrades = { ...S.db.grades };
+            delete newGrades[gId];
+            const newDb = { ...S.db, grades: newGrades };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `حذف درجة للمادة ${grade.subject}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+            persist(newDb);
+            showToast("تم حذف الدرجة بنجاح", "success");
+        }
+
+        function renderNotesTab(student, actorName) {
+            const notes = student.notes || [];
+            return `
+        <div class="card p4" style="margin-bottom:16px;">
+          <h4 style="font-size:14px;font-weight:800;margin-bottom:12px;">إضافة ملاحظة جديدة للطالب</h4>
+          <form onsubmit="submitStudentNote(event, '${student.id}', '${esc(actorName)}')">
+            ${field({inner:`<textarea class="input" id="new-note-text" rows="3" placeholder="اكتب ملاحظة تظهر للطالب في حسابه..." required></textarea>`})}
+            ${btn({label:"إضافة الملاحظة", type:"submit", icon:"plus", size:"sm"})}
+          </form>
+        </div>
+        <div class="card p4">
+          <h4 style="font-size:14px;font-weight:800;margin-bottom:12px;">الملاحظات السابقة</h4>
+          ${notes.length === 0 ? emptyState("alert", "لا توجد ملاحظات مسجلة") : `
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            ${notes.map((n, idx) => `
+            <div style="padding:10px;border-radius:12px;background:${C.goldSoft};border:1px solid ${C.gold}40;display:flex;justify-content:space-between;align-items:flex-start;">
+              <div>
+                <p style="font-size:14px;font-weight:700;color:${C.ink};">${esc(n.text)}</p>
+                <p style="font-size:11px;color:${C.inkSoft};margin-top:4px;">${esc(n.author)} · ${fmtDateTime(n.date)}</p>
+              </div>
+              <button class="icon-btn" style="color:${C.danger};background:transparent" onclick="deleteStudentNote('${student.id}', ${idx}, '${esc(actorName)}')">${icon("trash",14)}</button>
+            </div>`).join("")}
+          </div>`}
+        </div>`;
+        }
+
+        function submitStudentNote(ev, studentId, actorName) {
+            ev.preventDefault();
+            const text = document.getElementById("new-note-text").value.trim();
+            if (!text) return;
+            const student = S.db.students[studentId];
+            const newNotes = [{ id: uid("NT"), text, author: actorName, date: new Date().toISOString() }, ...(student.notes || [])];
+            const updatedStudent = { ...student, notes: newNotes };
+            const newDb = { ...S.db, students: { ...S.db.students, [studentId]: updatedStudent } };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `إضافة ملاحظة للطالب ${student.name}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+            persist(newDb);
+            showToast("تمت إضافة الملاحظة", "success");
+        }
+
+        function deleteStudentNote(studentId, idx, actorName) {
+            const student = S.db.students[studentId];
+            const newNotes = [...(student.notes || [])];
+            newNotes.splice(idx, 1);
+            const updatedStudent = { ...student, notes: newNotes };
+            const newDb = { ...S.db, students: { ...S.db.students, [studentId]: updatedStudent } };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `حذف ملاحظة للطالب ${student.name}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+            persist(newDb);
+            showToast("تم حذف الملاحظة", "success");
+        }
+
+        function renderEditStudentForm(student, actorName) {
+            const grades = [...new Set(S.db.classes.map(c => c.grade))];
+            const currentGrade = S.ui.editGrade || student.grade;
+            const sections = [...new Set(S.db.classes.filter(c => c.grade === currentGrade).map(c => c.section))];
+            
+            return `
+        <div class="card p5">
+          <h4 style="font-size:16px;font-weight:800;margin-bottom:16px;">تعديل بيانات الطالب</h4>
+          <form onsubmit="submitEditStudent(event, '${student.id}', '${esc(actorName)}')">
+            ${renderPhotoUpload("تعديل صورة الطالب", "edit-photo-preview", "editPhotoData", student.photo, "edit-photo-input")}
+            ${field({label:"الاسم بالكامل", inner:`<input class="input" id="es-name" value="${esc(student.name)}" required>`})}
+            ${field({label:"هاتف الطالب", inner:`<input class="input" id="es-sphone" value="${esc(student.studentPhone)}" required>`})}
+            ${field({label:"هاتف ولي الأمر", inner:`<input class="input" id="es-gphone" value="${esc(student.guardianPhone)}" required>`})}
+            <div class="row2">
+              ${field({label:"الصف الدراسي", inner:`<select class="input" id="es-grade" onchange="S.ui.editGrade=this.value; render();">${grades.map(g=>`<option value="${esc(g)}" ${currentGrade===g?"selected":""}>${esc(g)}</option>`).join("")}</select>`})}
+              ${field({label:"الفصل / المجموعة", inner:`<select class="input" id="es-section">${sections.map(s=>`<option value="${esc(s)}" ${student.section===s?"selected":""}>${esc(s)}</option>`).join("")}</select>`})}
+            </div>
+            ${field({label:"تاريخ الميلاد", inner:`<input class="input" type="date" id="es-dob" value="${esc(student.dob)}">`})}
+            ${field({label:"حالة الحساب", inner:`<select class="input" id="es-status"><option value="نشط" ${student.status==="نشط"?"selected":""}>نشط</option><option value="موقوف" ${student.status==="موقوف"?"selected":""}>موقوف</option></select>`})}
+            ${field({label:"كلمة المرور الجديدة (أتركها فارغة للحفاظ على الحالية)", inner:`<input class="input" id="es-pass" placeholder="كلمة مرور جديدة...">`})}
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:20px;">
+              ${btn({label:"حفظ والتحديث", type:"submit", icon:"save", size:"lg"})}
+              ${confirmBtn('del_stu_'+student.id, 'deleteStudent', `'${student.id}', '${esc(actorName)}'`)}
+            </div>
+          </form>
+        </div>`;
+        }
+
+        function submitEditStudent(ev, studentId, actorName) {
+            ev.preventDefault();
+            const student = S.db.students[studentId];
+            const name = document.getElementById("es-name").value.trim();
+            const sPhone = document.getElementById("es-sphone").value.replace(/\D/g, "");
+            const gPhone = document.getElementById("es-gphone").value.replace(/\D/g, "");
+            const grade = document.getElementById("es-grade").value;
+            const section = document.getElementById("es-section").value;
+            const dob = document.getElementById("es-dob").value;
+            const status = document.getElementById("es-status").value;
+            const newPass = document.getElementById("es-pass").value.trim();
+
+            let photo = student.photo || "";
+            if (S.ui.editPhotoData === "__REMOVE__") photo = "";
+            else if (S.ui.editPhotoData) photo = S.ui.editPhotoData;
+
+            const updated = {
+                ...student,
+                name,
+                studentPhone: sPhone,
+                guardianPhone: gPhone,
+                grade,
+                section,
+                dob,
+                status,
+                photo,
+                password: newPass ? newPass : student.password
+            };
+
+            const newDb = { ...S.db, students: { ...S.db.students, [studentId]: updated } };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `تعديل بيانات الطالب ${name}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            S.ui.editPhotoData = null;
+            showToast("تم تحديث بيانات الطالب بنجاح", "success");
+        }
+
+        function deleteStudent(studentId, actorName) {
+            const student = S.db.students[studentId];
+            if (!student) return;
+
+            const newStudents = { ...S.db.students };
+            delete newStudents[studentId];
+
+            const newDb = { ...S.db, students: newStudents };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `حذف الطالب ${student.name} (${student.code})`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            closeStudentFile();
+            showToast("تم حذف حساب الطالب بنجاح", "success");
+        }
+
+        /* ============================== ATTENDANCE SESSION ============================== */
+        function renderAttendanceSession(actorName) {
+            const gradesList = [...new Set(S.db.classes.map(c => c.grade))];
+            const selGrade = S.ui.attGrade || gradesList[0] || "";
+            const sectionsList = [...new Set(S.db.classes.filter(c => c.grade === selGrade).map(c => c.section))];
+            const selSection = S.ui.attSection || sectionsList[0] || "";
+            const attDate = S.ui.attDate || todayISO();
+
+            const students = Object.values(S.db.students).filter(s => s.grade === selGrade && (!selSection || s.section === selSection));
+
+            return `
+        <div class="card p4" style="margin-bottom:16px;">
+          <h4 style="font-weight:800;margin-bottom:12px;">تسجيل الحضور والغياب</h4>
+          <div class="row3">
+            ${field({label:"الصف", inner:`<select class="input" onchange="S.ui.attGrade=this.value; S.ui.attSection=''; render();">${gradesList.map(g => `<option value="${esc(g)}" ${selGrade===g?"selected":""}>${esc(g)}</option>`).join("")}</select>`})}
+            ${field({label:"المجموعة", inner:`<select class="input" onchange="S.ui.attSection=this.value; render();">${sectionsList.map(s => `<option value="${esc(s)}" ${selSection===s?"selected":""}>${esc(s)}</option>`).join("")}</select>`})}
+            ${field({label:"التاريخ", inner:`<input class="input" type="date" value="${attDate}" onchange="S.ui.attDate=this.value; render();">`})}
+          </div>
+        </div>
+
+        ${students.length === 0 ? `<div class="card p3">${emptyState("clipboard", "لا يوجد طلاب في هذا الصف / المجموعة")}</div>` : `
+        <div class="card p4" style="margin-bottom:16px;">
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            ${students.map(s => {
+              const currentMark = S.ui.attMarks[s.id] || ATT.PRESENT;
+              return `
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid ${C.border}">
+                <div style="display:flex;align-items:center;gap:10px;">
+                  ${renderAvatar(s.photo, s.name, "avatar-sm")}
+                  <div>
+                    <span style="font-size:14px;font-weight:800;">${esc(s.name)}</span>
+                    <span style="display:block;font-size:11px;color:${C.inkSoft}">${esc(s.code)}</span>
+                  </div>
+                </div>
+                <div style="display:flex;gap:6px;">
+                  <button class="status-btn" style="background:${currentMark===ATT.PRESENT?C.successSoft:'#f0f2f5'};color:${currentMark===ATT.PRESENT?C.success:C.inkSoft};border:1px solid ${currentMark===ATT.PRESENT?C.success:'transparent'}" onclick="setAttMark('${s.id}', '${ATT.PRESENT}')">${icon("check",16)}</button>
+                  <button class="status-btn" style="background:${currentMark===ATT.LATE?C.warningSoft:'#f0f2f5'};color:${currentMark===ATT.LATE?C.warning:C.inkSoft};border:1px solid ${currentMark===ATT.LATE?C.warning:'transparent'}" onclick="setAttMark('${s.id}', '${ATT.LATE}')">${icon("clock",16)}</button>
+                  <button class="status-btn" style="background:${currentMark===ATT.ABSENT?C.dangerSoft:'#f0f2f5'};color:${currentMark===ATT.ABSENT?C.danger:C.inkSoft};border:1px solid ${currentMark===ATT.ABSENT?C.danger:'transparent'}" onclick="setAttMark('${s.id}', '${ATT.ABSENT}')">${icon("xCircle",16)}</button>
+                </div>
+              </div>`;
+            }).join("")}
+          </div>
+          ${btn({label:"حفظ كشف الحضور", action:"saveAttendanceBatch", args:`'${esc(actorName)}'`, icon:"save", full:true, size:"lg", extra:'style="margin-top:20px;"'})}
+        </div>`}`;
+        }
+
+        function setAttMark(sId, status) {
+            S.ui.attMarks[sId] = status;
+            render();
+        }
+
+        function saveAttendanceBatch(actorName) {
+            const gradesList = [...new Set(S.db.classes.map(c => c.grade))];
+            const selGrade = S.ui.attGrade || gradesList[0] || "";
+            const sectionsList = [...new Set(S.db.classes.filter(c => c.grade === selGrade).map(c => c.section))];
+            const selSection = S.ui.attSection || sectionsList[0] || "";
+            const attDate = S.ui.attDate || todayISO();
+
+            const students = Object.values(S.db.students).filter(s => s.grade === selGrade && (!selSection || s.section === selSection));
+            
+            const newAtt = { ...S.db.attendance };
+            students.forEach(s => {
+                const status = S.ui.attMarks[s.id] || ATT.PRESENT;
+                const attId = `ATT_${s.id}_${attDate}`;
+                newAtt[attId] = { id: attId, studentId: s.id, date: attDate, status, createdAt: new Date().toISOString() };
+            });
+
+            const newDb = { ...S.db, attendance: newAtt };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `تسجيل حضور ${students.length} طالب لصف ${selGrade} بتاريخ ${attDate}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            showToast("تم حفظ سجل الحضور والغياب بنجاح", "success");
+        }
+
+        /* ============================== ADMIN PANEL & CLOUD SYNC ============================== */
+        function renderAdminPanel(actorName) {
+            const sub = S.ui.adminSubtab || "teachers";
+            let subContent = "";
+
+            if (sub === "teachers") subContent = renderAdminTeachers(actorName);
+            else if (sub === "classes") subContent = renderAdminClasses(actorName);
+            else if (sub === "cloud") subContent = renderAdminCloud(actorName);
+            else if (sub === "logs") subContent = renderAdminLogs();
+
+            return `
+        <div style="margin-bottom:16px;">
+          ${tabs([
+            {id:"teachers", label:"المساعدين والمدرسين", icon:"userCog"},
+            {id:"classes", label:"الصفوف والمجموعات", icon:"school"},
+            {id:"cloud", label:"السحابة والنسخ الاحتياطي", icon:"refresh"},
+            {id:"logs", label:"سجل النظام", icon:"clipboard"}
+          ], sub, "setAdminSubtab")}
+        </div>
+        ${subContent}`;
+        }
+
+        function setAdminSubtab(sub) {
+            S.ui.adminSubtab = sub;
+            render();
+        }
+
+        function renderAdminTeachers(actorName) {
+            const teachers = Object.values(S.db.teachers);
+            return `
+        <div class="card p4" style="margin-bottom:16px;">
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:12px;">إضافة مدرس / مساعد جديد</h4>
+          <form onsubmit="submitNewTeacher(event, '${esc(actorName)}')">
+            ${renderPhotoUpload("صورة المدرس الشخصية", "teacher-photo-preview", "editTeacherPhotoData", null, "teacher-photo-input")}
+            ${field({label:"الاسم بالكامل", inner:`<input class="input" id="nt-name" placeholder="مثال: أ/ أحمد الشامي" required>`})}
+            <div class="row2">
+              ${field({label:"الرتبة", inner:`<select class="input" id="nt-role"><option value="teacher">مدرس / مساعد</option><option value="admin">مدير نظام</option></select>`})}
+              ${field({label:"كلمة المرور", inner:`<input class="input" id="nt-pass" value="${genPassword()}" required>`})}
+            </div>
+            ${btn({label:"إنشاء الحساب", type:"submit", icon:"userPlus", size:"sm"})}
+          </form>
+        </div>
+
+        <div class="card p4">
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:12px;">قائمة الكادر التعليمي</h4>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            ${teachers.map(t => `
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px;border-bottom:1px solid ${C.border}">
+              <div style="display:flex;align-items:center;gap:10px;">
+                ${renderAvatar(t.photo, t.name, "avatar-sm")}
+                <div>
+                  <h4 style="font-size:14px;font-weight:800;">${esc(t.name)} ${t.role==="admin"?badge("مدير","#1A1200","#E8C170"):badge("مدرس",C.primary,C.primarySoft)}</h4>
+                  <p style="font-size:12px;color:${C.inkSoft}">الكود: <code style="color:${C.gold}">${esc(t.code)}</code> | كلمة المرور: <code>${esc(t.password)}</code></p>
+                </div>
+              </div>
+              ${t.role !== "admin" ? confirmBtn('del_tch_'+t.id, 'deleteTeacher', `'${t.id}', '${esc(actorName)}'`) : ""}
+            </div>`).join("")}
+          </div>
+        </div>`;
+        }
+
+        function submitNewTeacher(ev, actorName) {
+            ev.preventDefault();
+            const name = document.getElementById("nt-name").value.trim();
+            const role = document.getElementById("nt-role").value;
+            const pass = document.getElementById("nt-pass").value.trim();
+
+            if (!name || !pass) return;
+
+            const existingCodes = new Set(Object.values(S.db.teachers).map(t => t.code));
+            const code = genStaffCode(existingCodes, role);
+            const id = uid("TCH");
+            let photo = "";
+            if (S.ui.editTeacherPhotoData && S.ui.editTeacherPhotoData !== "__REMOVE__") photo = S.ui.editTeacherPhotoData;
+
+            const teacherObj = { id, code, password: pass, name, role, photo, createdAt: new Date().toISOString() };
+            const newDb = { ...S.db, teachers: { ...S.db.teachers, [id]: teacherObj } };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `إضافة ${role==="admin"?"مدير":"مدرس"} جديد: ${name} (${code})`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            S.ui.editTeacherPhotoData = null;
+            showToast(`تم إنشاء حساب ${name} بنجاح`, "success");
+        }
+
+        function deleteTeacher(tId, actorName) {
+            const teacher = S.db.teachers[tId];
+            if (!teacher) return;
+            const newTeachers = { ...S.db.teachers };
+            delete newTeachers[tId];
+
+            const newDb = { ...S.db, teachers: newTeachers };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `حذف حساب المدرس ${teacher.name}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            showToast("تم حذف الحساب بنجاح", "success");
+        }
+
+        function renderAdminClasses(actorName) {
+            const classes = S.db.classes || [];
+            return `
+        <div class="card p4" style="margin-bottom:16px;">
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:12px;">إضافة صف أو مجموعة جديدة</h4>
+          <form onsubmit="submitNewClass(event, '${esc(actorName)}')">
+            <div class="row2">
+              ${field({label:"اسم الصف", inner:`<input class="input" id="nc-grade" placeholder="مثال: الصف الأول الثانوي" required>`})}
+              ${field({label:"اسم المجموعة / الفصل", inner:`<input class="input" id="nc-section" placeholder="مثال: أ أو مجموعة السبت" required>`})}
+            </div>
+            ${btn({label:"إضافة الصف", type:"submit", icon:"plus", size:"sm"})}
+          </form>
+        </div>
+
+        <div class="card p4">
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:12px;">الصفوف المعتمدة حاليًا</h4>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            ${classes.map((c, idx) => `
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-radius:12px;background:${C.primarySoft}">
+              <span style="font-size:14px;font-weight:800;color:${C.primaryDark}">${esc(c.grade)} — مجموعة: ${esc(c.section)}</span>
+              <button class="icon-btn" style="color:${C.danger};background:#fff" onclick="removeClassSection(${idx}, '${esc(actorName)}')">${icon("trash",14)}</button>
+            </div>`).join("")}
+          </div>
+        </div>`;
+        }
+
+        function submitNewClass(ev, actorName) {
+            ev.preventDefault();
+            const grade = document.getElementById("nc-grade").value.trim();
+            const section = document.getElementById("nc-section").value.trim();
+
+            if (!grade || !section) return;
+
+            const newClasses = [...(S.db.classes || []), { grade, section }];
+            const newDb = { ...S.db, classes: newClasses };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `إضافة صف ومجموعة جديدة: ${grade} - ${section}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            showToast("تمت إضافة المجموعة بنجاح", "success");
+        }
+
+        function removeClassSection(idx, actorName) {
+            const newClasses = [...S.db.classes];
+            const removed = newClasses.splice(idx, 1)[0];
+            const newDb = { ...S.db, classes: newClasses };
+            newDb.logs = [{ id: uid("LOG"), actor: actorName, action: `حذف مجموعة: ${removed?.grade} - ${removed?.section}`, date: new Date().toISOString() }, ...newDb.logs].slice(0, 300);
+
+            persist(newDb);
+            showToast("تم حذف المجموعة بنجاح", "success");
+        }
+
+        function renderAdminCloud(actorName) {
+            return `
+        <div class="card p5" style="margin-bottom:16px;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <div style="width:40px;height:40px;border-radius:12px;background:${C.goldSoft};display:flex;align-items:center;justify-content:center;">
+              ${icon("refresh",20,C.gold)}
+            </div>
+            <div>
+              <h4 style="font-size:16px;font-weight:800;">السحابة ومزامنة البيانات</h4>
+              <p style="font-size:12px;color:${C.inkSoft}">${cloudAvailable ? "متصل بقاعدة بيانات Firebase — أي تعديل يظهر فورًا على كل الأجهزة المفتوحة" : "تعذر الوصول لقاعدة البيانات حاليًا — تحقق من الاتصال بالإنترنت"}</p>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            ${btn({label:"سحب أحدث نسخة من السحابة الآن", action:"refreshFromCloud", args:"false", icon:"refresh", full:true, size:"lg"})}
+            ${btn({label:"تصدير نسخة احتياطية (ملف JSON)", action:"exportDB", icon:"save", variant:"secondary", full:true})}
+            <label class="btn btn-secondary btn-full" style="cursor:pointer;">
+              ${icon("book",18)} استعادة نسخة احتياطية من ملف
+              <input type="file" accept=".json" onchange="importDB(event, '${esc(actorName)}')" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <div class="card p5" style="border:1px solid ${C.danger}40;background:${C.dangerSoft}">
+          <h4 style="font-size:15px;font-weight:800;color:${C.danger};margin-bottom:8px;">إعادة ضبط النظام</h4>
+          <p style="font-size:12px;color:${C.ink};margin-bottom:16px;">حذف كافة البيانات وإعادة التطبيق للوضع الافتراضي.</p>
+          ${confirmBtn('reset_db_key', 'resetDatabase', `'${esc(actorName)}'`)}
+        </div>`;
+        }
+
+        function exportDB() {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(S.db, null, 2));
+            const dlAnchor = document.createElement('a');
+            dlAnchor.setAttribute("href", dataStr);
+            dlAnchor.setAttribute("download", `mrdmdm_backup_${todayISO()}.json`);
+            document.body.appendChild(dlAnchor);
+            dlAnchor.click();
+            dlAnchor.remove();
+            showToast("تم تحميل النسخة الاحتياطية بنجاح", "success");
+        }
+
+        function importDB(ev, actorName) {
+            const file = ev.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const importedData = JSON.parse(e.target.result);
+                    if (importedData && importedData.students && importedData.teachers) {
+                        importedData.logs = [{ id: uid("LOG"), actor: actorName, action: "استعادة نسخة احتياطية سحابية", date: new Date().toISOString() }, ...(importedData.logs || [])].slice(0, 300);
+                        persist(importedData);
+                        showToast("تمت استعادة البيانات بنجاح ☁️", "success");
+                    } else {
+                        showToast("ملف نسخة احتياطية غير صالح", "error");
+                    }
+                } catch (err) {
+                    showToast("حدث خطأ أثناء قراءة الملف", "error");
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function resetDatabase(actorName) {
+            const fresh = defaultDB();
+            fresh.logs = [{ id: uid("LOG"), actor: actorName, action: "إعادة ضبط النظام كاملاً", date: new Date().toISOString() }];
+            persist(fresh);
+            showToast("تم إعادة ضبط النظام إلى الإعدادات الافتراضية", "success");
+        }
+
+        function renderAdminLogs() {
+            const logs = S.db.logs || [];
+            return `
+        <div class="card p4">
+          <h4 style="font-size:15px;font-weight:800;margin-bottom:12px;">سجل الحركات والتعديلات</h4>
+          ${logs.length === 0 ? emptyState("clipboard", "لا توجد سجلات بعد") : `
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            ${logs.map(l => `
+            <div style="padding:8px 0;border-bottom:1px solid ${C.border};display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <span style="font-size:13px;font-weight:700;">${esc(l.actor)}</span>:
+                <span style="font-size:13px;color:${C.ink}">${esc(l.action)}</span>
+              </div>
+              <span style="font-size:10px;color:${C.inkSoft}">${fmtDateTime(l.date)}</span>
+            </div>`).join("")}
+          </div>`}
+        </div>`;
+        }
+
+        /* ============================== RENDER APP ROUTER ============================== */
+        function render() {
+            const root = document.getElementById("root");
+            if (!root) return;
+
+            if (!S.session) {
+                if (S.screen === "landing") root.innerHTML = screenLanding();
+                else if (S.screen === "student-login") root.innerHTML = screenStudentLogin();
+                else if (S.screen === "staff-login") root.innerHTML = screenStaffLogin();
+                else if (S.screen === "register") root.innerHTML = screenRegister();
+                else root.innerHTML = screenLanding();
+            } else {
+                if (S.session.type === "student") {
+                    root.innerHTML = screenStudentPortal();
+                } else if (S.session.type === "teacher" || S.session.type === "admin") {
+                    root.innerHTML = screenStaffPortal();
+                }
+            }
+
+            if (S.toast) {
+                const toastDiv = document.createElement("div");
+                toastDiv.className = "toast";
+                toastDiv.style.background = S.toast.type === "error" ? C.danger : S.toast.type === "success" ? C.success : C.primary;
+                toastDiv.innerText = S.toast.message;
+                root.appendChild(toastDiv);
+            }
+        }
+
+        async function init() {
+            S.db = await loadDB();
+            render();
+            // Real-time listener: any device that saves updates everyone else
+            // instantly (no polling needed with Firestore).
+            startRealtimeSync();
+        }
+
+        window.addEventListener("DOMContentLoaded", init);
+    </script>
+</body>
+</html>}
 .btn-primary {
     background: var(--primary);
     color: #fff;
